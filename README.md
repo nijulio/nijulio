@@ -1,21 +1,9 @@
-# Grupo19
-Repositorio principal para el desarrollo del proyecto
+# README
 
-## Integrantes
+Puedes probar con el usuario admin : email = frencoret@uc.cl password: 123456
 
-| Nombre | Github | Email |
-| :----- | :----- | :------- |
-| Nicolas Ignacio Julio Gonzalez | nijulio | nijulio@uc.cl |
-| RAIMUNDO MANTEROLA VALENZUELA | rmant | rmanterola@uc.cl |
-| FRANCISCO RENCORET DOMÍNGUEZ | franciscorencoret1 | frencoret@uc.cl |
+Puedes probar con el usuario normal : email = rmanterola@uc.cl password: 123456
 
-## Product Owner
-| Nombre | Github | Email |
-| :----- | :----- | :------- |
-| Isaac Carrera | [@ifcarrera](https://github.com/ifcarrera) | [ifcarrera@uc.cl](ifcarrera@uc.cl) |
+Populamos bases de datos en el seed.rb con Unas series y unos capitulos. Las series tienen asigandas una temporada, por lo que para crear capitulos debe asignar una temporada que exista.
 
-________________________
-
-# Read me
-
-Documento de especificaciones del alumno.
+El correo de confirmacion para el sign_up llega localmente por la consola
