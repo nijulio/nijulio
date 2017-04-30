@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netflixblog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  </head>
+
+  <body>
+    
+    <!-- Ahora hacemos el navigation bar -->
+
+    <div class="ui secondary  menu" style="background-color: lightgrey; padding: 10px 40px;">
+      <h1 class="item" style="font-size: 0px; margin: -10px -20px;">Netflic</h1>
+      <div class="right menu">
+        <a class="active item" href="/" style="border-width: 2px; border-color: white;">
+          Home
+        </a>
+        <a class="item" href="/series">
+          Series
+        </a>
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+
+        <% if user_signed_in? %>   
+          <%= link_to "Logout".html_safe, destroy_user_session_path, :method => :delete, class: "item" %>
+        <% else %>
+          <%= link_to "Login".html_safe, new_user_session_path, class: "item" %>
+          
+        <%end%>
+
+      </div>
+      
+  </div>
+
+    <%= yield %>
+
+      <!-- Aca van las noticias -->
+    <p class="notice" style="margin-left: 30px;"><%= notice %></p>
+    <p class="alert" style="margin-left: 30px;><%= alert %></p>
+    
+
+    
+  </body>
+</html>

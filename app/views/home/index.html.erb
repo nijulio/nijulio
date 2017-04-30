@@ -1,0 +1,10 @@
+<div class="ui container" style="height: 500px;">
+	<h1 style="text-align: center; vertical-align: middle; padding-top: 200px; font-size:50px; ">Welcome to Netflic</h1>
+
+<% if user_signed_in? %>
+<div class="ui button" style="text-align: center; vertical-align: middle; margin-top: 30px; margin-left: 32.5%; width: 400px; height: 40px; background-color: red;">
+    <%= link_to('Agregar series', new_series_path, :method => :get)%>
+</div>
+
+</div>
+<%end%>
